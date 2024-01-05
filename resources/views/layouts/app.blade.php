@@ -3005,20 +3005,7 @@
             <!--end::Theme mode-->
 
             <!--begin::User menu-->
-            <div class="app-navbar-item ms-1 ms-md-4" id="kt_header_user_menu_toggle">
-                <!--begin::Menu wrapper-->
-                <div class="cursor-pointer symbol symbol-35px"
-                    data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent"
-                    data-kt-menu-placement="bottom-end">
-                    <img src="/assets/media/avatars/300-3.jpg" class="rounded-3" alt="user" />
-                </div>
-
-                <!--begin::User account menu-->
-                <livewire:layout.user-account />
-                <!--end::User account menu-->
-
-                <!--end::Menu wrapper-->
-            </div>
+            <livewire:layout.user-account />
             <!--end::User menu-->
 
             <!--begin::Header menu toggle-->

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Auth\ProfileController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +16,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['auth', 'verified'])->group(function() {
-    Route::view('/', 'welcome');
+    Route::redirect('/', 'dashboard', 301);
     Route::view('dashboard', 'dashboard')
         ->name('dashboard');
 
-    Route::view('profile', 'profile')
-        ->name('profile');
+Route::name('profile.')->group(function() {
+
+    Route::get('profile', [ProfileController::class, 'overview'])
+        ->name('overview');
+
+    Route::view('profile/settings', 'livewire.pages.profile.settings')
+        ->name('settings');
+
+    // Route::get('/test', [TestController::class, 'index']);
+
+});
 
 });
 
