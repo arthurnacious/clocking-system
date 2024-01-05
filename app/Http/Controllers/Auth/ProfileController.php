@@ -10,7 +10,8 @@ class ProfileController extends Controller
 {
    public function overview(): View
    {
-    $user = Auth()->user()->load('roles');
+    $user = Auth()->user()
+                ->load(['address', 'address.country', 'profile', 'roles']);
 
     return view('livewire.pages.profile.overview', ['user' => $user]);
    }

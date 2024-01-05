@@ -6,6 +6,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -24,6 +25,7 @@ class User extends Authenticatable
         'first_name',
         'last_name',
         'email',
+        'cell',
         'password',
         'image',
     ];
@@ -60,4 +62,25 @@ class User extends Authenticatable
             set: fn ($value) => $value,
         );
     }
+
+    /**
+     * Get the address associated with the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function address(): HasOne
+    {
+        return $this->hasOne(Address::class);
+    }
+
+    /**
+     * Get the profile associated with the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function profile(): HasOne
+    {
+        return $this->hasOne(Profile::class);
+    }
+
 }

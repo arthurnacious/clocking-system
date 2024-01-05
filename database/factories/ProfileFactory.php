@@ -17,7 +17,9 @@ class ProfileFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'bio' => fake()->sentence(),
+            'website' => fake()->url(),
+            'birth_date' => fake()->date(),
         ];
     }
 }
