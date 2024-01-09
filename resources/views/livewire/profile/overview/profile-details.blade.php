@@ -61,9 +61,14 @@
         <div class="row mb-7">
         <!--begin::Label-->
         <label class="col-lg-4 fw-semibold text-muted">
-        Country
-        <span class="ms-1" data-bs-toggle="tooltip" title="Country of origination">
-        <i class="ki-duotone ki-information fs-7"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>                </span>
+            Country
+            <span class="ms-1" data-bs-toggle="tooltip" title="Country of origination">
+                <i class="ki-duotone ki-information fs-7">
+                    <span class="path1"></span>
+                    <span class="path2"></span>
+                    <span class="path3"></span>
+                </i>
+            </span>
         </label>
         <!--end::Label-->
         <!--begin::Col-->
@@ -86,7 +91,7 @@
           <span class="fw-bold fs-6 text-gray-800">
             @foreach ($user->roles as $role)
                 {{$role->name}}
-                @if ($loop->first) , @endif
+                @if (!$loop->last) , @endif
             @endforeach
         </span>
        </div>

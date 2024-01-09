@@ -12,8 +12,9 @@
                <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                   <!--begin::Item-->
                   <li class="breadcrumb-item text-muted">
-                     <a href="/../demo1/index.html" class="text-muted text-hover-primary">
-                     Home                            </a>
+                     <a href="{{route('dashboard')}}" class="text-muted text-hover-primary">
+                     Home
+                    </a>
                   </li>
                   <!--end::Item-->
                   <!--begin::Item-->
@@ -30,117 +31,6 @@
                <!--end::Breadcrumb-->
             </div>
             <!--end::Page title-->
-            <!--begin::Actions-->
-            <div class="d-flex align-items-center gap-2 gap-lg-3">
-               <!--begin::Filter menu-->
-               <div class="m-0">
-                  <!--begin::Menu toggle-->
-                  <a href="#" class="btn btn-sm btn-flex btn-secondary fw-bold" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-                  <i class="ki-duotone ki-filter fs-6 text-muted me-1"><span class="path1"></span><span class="path2"></span></i>
-                  Filter
-                  </a>
-                  <!--end::Menu toggle-->
-                  <!--begin::Menu 1-->
-                  <div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true" id="kt_menu_6595875ce2fda">
-                     <!--begin::Header-->
-                     <div class="px-7 py-5">
-                        <div class="fs-5 text-gray-900 fw-bold">Filter Options</div>
-                     </div>
-                     <!--end::Header-->
-                     <!--begin::Menu separator-->
-                     <div class="separator border-gray-200"></div>
-                     <!--end::Menu separator-->
-                     <!--begin::Form-->
-                     <div class="px-7 py-5">
-                        <!--begin::Input group-->
-                        <div class="mb-10">
-                           <!--begin::Label-->
-                           <label class="form-label fw-semibold">Status:</label>
-                           <!--end::Label-->
-                           <!--begin::Input-->
-                           <div>
-                              <select class="form-select form-select-solid select2-hidden-accessible" multiple="" data-kt-select2="true" data-close-on-select="false" data-placeholder="Select option" data-dropdown-parent="#kt_menu_6595875ce2fda" data-allow-clear="true" data-select2-id="select2-data-7-csb4" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
-                                 <option></option>
-                                 <option value="1">Approved</option>
-                                 <option value="2">Pending</option>
-                                 <option value="2">In Process</option>
-                                 <option value="2">Rejected</option>
-                              </select>
-                              <span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-8-q8ue" style="width: 100%;">
-                                 <span class="selection">
-                                    <span class="select2-selection select2-selection--multiple form-select form-select-solid" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false">
-                                       <ul class="select2-selection__rendered" id="select2-rt5u-container"></ul>
-                                       <span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-rt5u-container" placeholder="Select option" style="width: 100%;"></textarea></span>
-                                    </span>
-                                 </span>
-                                 <span class="dropdown-wrapper" aria-hidden="true"></span>
-                              </span>
-                           </div>
-                           <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="mb-10">
-                           <!--begin::Label-->
-                           <label class="form-label fw-semibold">Member Type:</label>
-                           <!--end::Label-->
-                           <!--begin::Options-->
-                           <div class="d-flex">
-                              <!--begin::Options-->
-                              <label class="form-check form-check-sm form-check-custom form-check-solid me-5">
-                              <input class="form-check-input" type="checkbox" value="1">
-                              <span class="form-check-label">
-                              Author
-                              </span>
-                              </label>
-                              <!--end::Options-->
-                              <!--begin::Options-->
-                              <label class="form-check form-check-sm form-check-custom form-check-solid">
-                              <input class="form-check-input" type="checkbox" value="2" checked="checked">
-                              <span class="form-check-label">
-                              Customer
-                              </span>
-                              </label>
-                              <!--end::Options-->
-                           </div>
-                           <!--end::Options-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="mb-10">
-                           <!--begin::Label-->
-                           <label class="form-label fw-semibold">Notifications:</label>
-                           <!--end::Label-->
-                           <!--begin::Switch-->
-                           <div class="form-check form-switch form-switch-sm form-check-custom form-check-solid">
-                              <input class="form-check-input" type="checkbox" value="" name="notifications" checked="">
-                              <label class="form-check-label">
-                              Enabled
-                              </label>
-                           </div>
-                           <!--end::Switch-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Actions-->
-                        <div class="d-flex justify-content-end">
-                           <button type="reset" class="btn btn-sm btn-light btn-active-light-primary me-2" data-kt-menu-dismiss="true">Reset</button>
-                           <button type="submit" class="btn btn-sm btn-primary" data-kt-menu-dismiss="true">Apply</button>
-                        </div>
-                        <!--end::Actions-->
-                     </div>
-                     <!--end::Form-->
-                  </div>
-                  <!--end::Menu 1-->
-               </div>
-               <!--end::Filter menu-->
-               <!--begin::Secondary button-->
-               <!--end::Secondary button-->
-               <!--begin::Primary button-->
-               <a href="#" class="btn btn-sm fw-bold btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app">
-               Create        </a>
-               <!--end::Primary button-->
-            </div>
-            <!--end::Actions-->
          </div>
 
     </x-slot>
@@ -154,7 +44,7 @@
                  <!--begin: Pic-->
                  <div class="me-7 mb-4">
                     <div class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative">
-                       <img src="/assets/media/avatars/300-1.jpg" alt="image" />
+                       <img src="{{$user->image}}" alt="{{$user->full_name}}" />
                        <div class="position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-body h-20px w-20px"></div>
                     </div>
                  </div>
@@ -164,169 +54,53 @@
                     <!--begin::Title-->
                     <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
                        <!--begin::User-->
-                       <div class="d-flex flex-column">
+                        <div class="d-flex flex-column">
                           <!--begin::Name-->
-                          <div class="d-flex align-items-center mb-2">
-                             <a href="#" class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">{{$user->full_name}}</a>
-                             <a href="#">
-                                <i class="ki-duotone ki-verify fs-1 text-primary">
-                                <span class="path1"></span>
-                                <span class="path2"></span>
-                                </i>
-                            </a>
-                          </div>
-                          <!--end::Name-->
-                          <!--begin::Info-->
-                          <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
-                            @if ($user->roles->count() > 0)
-                                <span class="d-flex align-items-center text-gray-500 text-hover-primary me-5 mb-2">
-                                    <i class="ki-duotone ki-profile-circle fs-4 me-1">
+                            <div class="d-flex align-items-center mb-2">
+                                <a href="#" class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">{{$user->full_name}}</a>
+                                <a href="#">
+                                    <i class="ki-duotone ki-verify fs-1 text-primary">
                                         <span class="path1"></span>
                                         <span class="path2"></span>
-                                        <span class="path3"></span>
                                     </i>
-                                    @foreach ($user->roles as $role)
-                                        {{$role}}
-                                    @endforeach
+                                </a>
+                            </div>
+                            <!--end::Name-->
+                            <!--begin::Info-->
+                            <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
+                                @if ($user->roles->count() > 0)
+                                    <span class="d-flex align-items-center text-gray-500 text-hover-primary me-5 mb-2">
+                                        <i class="ki-duotone ki-profile-circle fs-4 me-1">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span>
+                                            <span class="path3"></span>
+                                        </i>
+                                        @foreach ($user->roles as $role)
+                                            {{$role->name}}
+                                            @if (!$loop->last) , @endif
+                                        @endforeach
+                                    </span>
+                                @endif
+                                <a href="#" class="d-flex align-items-center text-gray-500 text-hover-primary me-5 mb-2">
+                                    <i class="ki-duotone ki-geolocation fs-4 me-1">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                    </i>
+                                    {{$user->address->street_address}},
+                                    {{$user->address->city}},
+                                    {{$user->address->country->name}}
+                                </a>
+                                <span class="d-flex align-items-center text-gray-500 text-hover-primary mb-2">
+                                    <i class="ki-duotone ki-sms fs-4">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                    </i>
+                                    {{$user->email}}
                                 </span>
-                            @endif
-                             <a href="#" class="d-flex align-items-center text-gray-500 text-hover-primary me-5 mb-2">
-                                <i class="ki-duotone ki-geolocation fs-4 me-1">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </i>
-                                SF, Bay Area
-                             </a>
-                             <span class="d-flex align-items-center text-gray-500 text-hover-primary mb-2">
-                                <i class="ki-duotone ki-sms fs-4">
-                                    <span class="path1"></span>
-                                    <span class="path2"></span>
-                                </i>
-                                {{$user->email}}
-                             </span>
-                          </div>
-                          <!--end::Info-->
-                       </div>
-                       <!--end::User-->
-                       <!--begin::Actions-->
-                       <div class="d-flex my-4">
-                          <a href="#" class="btn btn-sm btn-light me-2" id="kt_user_follow_button">
-                             <i class="ki-duotone ki-check fs-3 d-none"></i>
-                             <!--begin::Indicator label-->
-                             <span class="indicator-label">
-                                Follow
-                            </span>
-                             <!--end::Indicator label-->
-                             <!--begin::Indicator progress-->
-                             <span class="indicator-progress">
-                             Please wait...    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
-                             </span>
-                             <!--end::Indicator progress-->
-                          </a>
-                          <a href="#" class="btn btn-sm btn-primary me-3"  data-bs-toggle="modal" data-bs-target="#kt_modal_offer_a_deal" >Hire Me</a>
-                          <!--begin::Menu-->
-                          <div class="me-0">
-                             <button class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-                             <i class="ki-solid ki-dots-horizontal fs-2x"></i>                            </button>
-                             <!--begin::Menu 3-->
-                             <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-semibold w-200px py-3" data-kt-menu="true">
-                                <!--begin::Heading-->
-                                <div class="menu-item px-3">
-                                   <div class="menu-content text-muted pb-2 px-3 fs-7 text-uppercase">
-                                      Payments
-                                   </div>
-                                </div>
-                                <!--end::Heading-->
-                                <!--begin::Menu item-->
-                                <div class="menu-item px-3">
-                                   <a href="#" class="menu-link px-3">
-                                   Create Invoice
-                                   </a>
-                                </div>
-                                <!--end::Menu item-->
-                                <!--begin::Menu item-->
-                                <div class="menu-item px-3">
-                                   <a href="#" class="menu-link flex-stack px-3">
-                                   Create Payment
-                                   <span class="ms-2" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference">
-                                   <i class="ki-duotone ki-information fs-6"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>            </span>
-                                   </a>
-                                </div>
-                                <!--end::Menu item-->
-                                <!--begin::Menu item-->
-                                <div class="menu-item px-3">
-                                   <a href="#" class="menu-link px-3">
-                                   Generate Bill
-                                   </a>
-                                </div>
-                                <!--end::Menu item-->
-                                <!--begin::Menu item-->
-                                <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="right-end">
-                                   <a href="#" class="menu-link px-3">
-                                   <span class="menu-title">Subscription</span>
-                                   <span class="menu-arrow"></span>
-                                   </a>
-                                   <!--begin::Menu sub-->
-                                   <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                      <!--begin::Menu item-->
-                                      <div class="menu-item px-3">
-                                         <a href="#" class="menu-link px-3">
-                                         Plans
-                                         </a>
-                                      </div>
-                                      <!--end::Menu item-->
-                                      <!--begin::Menu item-->
-                                      <div class="menu-item px-3">
-                                         <a href="#" class="menu-link px-3">
-                                         Billing
-                                         </a>
-                                      </div>
-                                      <!--end::Menu item-->
-                                      <!--begin::Menu item-->
-                                      <div class="menu-item px-3">
-                                         <a href="#" class="menu-link px-3">
-                                         Statements
-                                         </a>
-                                      </div>
-                                      <!--end::Menu item-->
-                                      <!--begin::Menu separator-->
-                                      <div class="separator my-2"></div>
-                                      <!--end::Menu separator-->
-                                      <!--begin::Menu item-->
-                                      <div class="menu-item px-3">
-                                         <div class="menu-content px-3">
-                                            <!--begin::Switch-->
-                                            <label class="form-check form-switch form-check-custom form-check-solid">
-                                               <!--begin::Input-->
-                                               <input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked" name="notifications"/>
-                                               <!--end::Input-->
-                                               <!--end::Label-->
-                                               <span class="form-check-label text-muted fs-6">
-                                               Recuring
-                                               </span>
-                                               <!--end::Label-->
-                                            </label>
-                                            <!--end::Switch-->
-                                         </div>
-                                      </div>
-                                      <!--end::Menu item-->
-                                   </div>
-                                   <!--end::Menu sub-->
-                                </div>
-                                <!--end::Menu item-->
-                                <!--begin::Menu item-->
-                                <div class="menu-item px-3 my-1">
-                                   <a href="#" class="menu-link px-3">
-                                   Settings
-                                   </a>
-                                </div>
-                                <!--end::Menu item-->
-                             </div>
-                             <!--end::Menu 3-->
-                          </div>
-                          <!--end::Menu-->
-                       </div>
-                       <!--end::Actions-->
+                            </div>
+                            <!--end::Info-->
+                        </div>
+                        <!--end::User-->
                     </div>
                     <!--end::Title-->
                     <!--begin::Stats-->
@@ -339,12 +113,15 @@
                              <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
                                 <!--begin::Number-->
                                 <div class="d-flex align-items-center">
-                                   <i class="ki-duotone ki-arrow-up fs-3 text-success me-2"><span class="path1"></span><span class="path2"></span></i>
-                                   <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$">0</div>
+                                   <i class="ki-duotone ki-electronic-clock fs-3 text-success me-2">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                    </i>
+                                    <div class="fs-2 fw-bold">{{$user->created_at->diffForHumans()}}</div>
                                 </div>
                                 <!--end::Number-->
                                 <!--begin::Label-->
-                                <div class="fw-semibold fs-6 text-gray-500">Earnings</div>
+                                <div class="fw-semibold fs-6 text-gray-500">Active from</div>
                                 <!--end::Label-->
                              </div>
                              <!--end::Stat-->
@@ -352,8 +129,11 @@
                              <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
                                 <!--begin::Number-->
                                 <div class="d-flex align-items-center">
-                                   <i class="ki-duotone ki-arrow-down fs-3 text-danger me-2"><span class="path1"></span><span class="path2"></span></i>
-                                   <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="80">0</div>
+                                   <i class="ki-duotone ki-book fs-3 text-success me-2">
+                                    <span class="path1"></span>
+                                    <span class="path2"></span>
+                                </i>
+                                   <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="{{$user->projects_count}}">0</div>
                                 </div>
                                 <!--end::Number-->
                                 <!--begin::Label-->
@@ -361,34 +141,10 @@
                                 <!--end::Label-->
                              </div>
                              <!--end::Stat-->
-                             <!--begin::Stat-->
-                             <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
-                                <!--begin::Number-->
-                                <div class="d-flex align-items-center">
-                                   <i class="ki-duotone ki-arrow-up fs-3 text-success me-2"><span class="path1"></span><span class="path2"></span></i>
-                                   <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="60" data-kt-countup-prefix="%">0</div>
-                                </div>
-                                <!--end::Number-->
-                                <!--begin::Label-->
-                                <div class="fw-semibold fs-6 text-gray-500">Success Rate</div>
-                                <!--end::Label-->
-                             </div>
-                             <!--end::Stat-->
                           </div>
                           <!--end::Stats-->
                        </div>
                        <!--end::Wrapper-->
-                       <!--begin::Progress-->
-                       <div class="d-flex align-items-center w-200px w-sm-300px flex-column mt-3">
-                          <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                             <span class="fw-semibold fs-6 text-gray-500">Profile Compleation</span>
-                             <span class="fw-bold fs-6">50%</span>
-                          </div>
-                          <div class="h-5px mx-3 w-100 bg-light mb-3">
-                             <div class="bg-success rounded h-5px" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                       </div>
-                       <!--end::Progress-->
                     </div>
                     <!--end::Stats-->
                  </div>
@@ -411,7 +167,7 @@
               </div>
               <!--end::Card title-->
               <!--begin::Action-->
-              <a href="/../demo1/account/settings.html"  class="btn btn-sm btn-primary align-self-center">Edit Profile</a>
+              <a href="{{route('profile.settings')}}"  class="btn btn-sm btn-primary align-self-center">Edit Profile</a>
               <!--end::Action-->
            </div>
            <!--begin::Card header-->
@@ -1200,8 +956,8 @@
                  <div class="card-header pt-7">
                     <!--begin::Title-->
                     <h3 class="card-title align-items-start flex-column">
-                       <span class="card-label fw-bold text-gray-900">Stock Report</span>
-                       <span class="text-gray-500 mt-1 fw-semibold fs-6">Total 2,356 Items in the Stock</span>
+                       <span class="card-label fw-bold text-gray-900">Project Report</span>
+                       <span class="text-gray-500 mt-1 fw-semibold fs-6">Total {{$user->projects_count}} Projects</span>
                     </h3>
                     <!--end::Title-->
                     <!--begin::Actions-->
@@ -1240,7 +996,7 @@
                           </div>
                           <!--end::Status-->
                           <!--begin::Search-->
-                          <a href="/../demo1/apps/ecommerce/catalog/products.html" class="btn btn-light btn-sm">View Stock</a>
+                          {{-- <a href="{{route('user.projects', $user)}}" class="btn btn-light btn-sm">View Projects</a> --}}
                           <!--end::Search-->
                        </div>
                        <!--begin::Filters-->
@@ -1256,242 +1012,52 @@
                        <thead>
                           <!--begin::Table row-->
                           <tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
-                             <th class="min-w-150px">Item</th>
-                             <th class="text-end pe-3 min-w-100px">Product ID</th>
+                             <th class="min-w-150px">Name</th>
                              <th class="text-end pe-3 min-w-150px">Date Added</th>
-                             <th class="text-end pe-3 min-w-100px">Price</th>
+                             <th class="text-end pe-3 min-w-100px">Payout Price</th>
                              <th class="text-end pe-3 min-w-100px">Status</th>
-                             <th class="text-end pe-0 min-w-75px">Qty</th>
+                             <th class="text-end pe-0 min-w-75px">View</th>
                           </tr>
                           <!--end::Table row-->
                        </thead>
                        <!--end::Table head-->
                        <!--begin::Table body-->
                        <tbody class="fw-bold text-gray-600">
-                          <tr>
-                             <!--begin::Item-->
-                             <td>
-                                <a href="/../demo1/apps/ecommerce/catalog/edit-product.html" class="text-gray-900 text-hover-primary">Macbook Air M1</a>
-                             </td>
-                             <!--end::Item-->
-                             <!--begin::Product ID-->
-                             <td class="text-end">
-                                #XGY-356
-                             </td>
-                             <!--end::Product ID-->
-                             <!--begin::Date added-->
-                             <td class="text-end">
-                                02 Apr, 2024
-                             </td>
-                             <!--end::Date added-->
-                             <!--begin::Price-->
-                             <td class="text-end">
-                                $1,230
-                             </td>
-                             <!--end::Price-->
-                             <!--begin::Status-->
-                             <td class="text-end">
-                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                             </td>
-                             <!--end::Status-->
-                             <!--begin::Qty-->
-                             <td class="text-end" data-order="58">
-                                <span class="text-gray-900 fw-bold">58 PCS</span>
-                             </td>
-                             <!--end::Qty-->
-                          </tr>
-                          <tr>
-                             <!--begin::Item-->
-                             <td>
-                                <a href="/../demo1/apps/ecommerce/catalog/edit-product.html" class="text-gray-900 text-hover-primary">Surface Laptop 4</a>
-                             </td>
-                             <!--end::Item-->
-                             <!--begin::Product ID-->
-                             <td class="text-end">
-                                #YHD-047
-                             </td>
-                             <!--end::Product ID-->
-                             <!--begin::Date added-->
-                             <td class="text-end">
-                                01 Apr, 2024
-                             </td>
-                             <!--end::Date added-->
-                             <!--begin::Price-->
-                             <td class="text-end">
-                                $1,060
-                             </td>
-                             <!--end::Price-->
-                             <!--begin::Status-->
-                             <td class="text-end">
-                                <span class="badge py-3 px-4 fs-7 badge-light-danger">Out of Stock</span>
-                             </td>
-                             <!--end::Status-->
-                             <!--begin::Qty-->
-                             <td class="text-end" data-order="0">
-                                <span class="text-gray-900 fw-bold">0 PCS</span>
-                             </td>
-                             <!--end::Qty-->
-                          </tr>
-                          <tr>
-                             <!--begin::Item-->
-                             <td>
-                                <a href="/../demo1/apps/ecommerce/catalog/edit-product.html" class="text-gray-900 text-hover-primary">Logitech MX 250</a>
-                             </td>
-                             <!--end::Item-->
-                             <!--begin::Product ID-->
-                             <td class="text-end">
-                                #SRR-678
-                             </td>
-                             <!--end::Product ID-->
-                             <!--begin::Date added-->
-                             <td class="text-end">
-                                24 Mar, 2024
-                             </td>
-                             <!--end::Date added-->
-                             <!--begin::Price-->
-                             <td class="text-end">
-                                $64
-                             </td>
-                             <!--end::Price-->
-                             <!--begin::Status-->
-                             <td class="text-end">
-                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                             </td>
-                             <!--end::Status-->
-                             <!--begin::Qty-->
-                             <td class="text-end" data-order="290">
-                                <span class="text-gray-900 fw-bold">290 PCS</span>
-                             </td>
-                             <!--end::Qty-->
-                          </tr>
-                          <tr>
-                             <!--begin::Item-->
-                             <td>
-                                <a href="/../demo1/apps/ecommerce/catalog/edit-product.html" class="text-gray-900 text-hover-primary">AudioEngine HD3</a>
-                             </td>
-                             <!--end::Item-->
-                             <!--begin::Product ID-->
-                             <td class="text-end">
-                                #PXF-578
-                             </td>
-                             <!--end::Product ID-->
-                             <!--begin::Date added-->
-                             <td class="text-end">
-                                24 Mar, 2024
-                             </td>
-                             <!--end::Date added-->
-                             <!--begin::Price-->
-                             <td class="text-end">
-                                $1,060
-                             </td>
-                             <!--end::Price-->
-                             <!--begin::Status-->
-                             <td class="text-end">
-                                <span class="badge py-3 px-4 fs-7 badge-light-danger">Out of Stock</span>
-                             </td>
-                             <!--end::Status-->
-                             <!--begin::Qty-->
-                             <td class="text-end" data-order="46">
-                                <span class="text-gray-900 fw-bold">46 PCS</span>
-                             </td>
-                             <!--end::Qty-->
-                          </tr>
-                          <tr>
-                             <!--begin::Item-->
-                             <td>
-                                <a href="/../demo1/apps/ecommerce/catalog/edit-product.html" class="text-gray-900 text-hover-primary">HP Hyper LTR</a>
-                             </td>
-                             <!--end::Item-->
-                             <!--begin::Product ID-->
-                             <td class="text-end">
-                                #PXF-778
-                             </td>
-                             <!--end::Product ID-->
-                             <!--begin::Date added-->
-                             <td class="text-end">
-                                16 Jan, 2024
-                             </td>
-                             <!--end::Date added-->
-                             <!--begin::Price-->
-                             <td class="text-end">
-                                $4500
-                             </td>
-                             <!--end::Price-->
-                             <!--begin::Status-->
-                             <td class="text-end">
-                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                             </td>
-                             <!--end::Status-->
-                             <!--begin::Qty-->
-                             <td class="text-end" data-order="78">
-                                <span class="text-gray-900 fw-bold">78 PCS</span>
-                             </td>
-                             <!--end::Qty-->
-                          </tr>
-                          <tr>
-                             <!--begin::Item-->
-                             <td>
-                                <a href="/../demo1/apps/ecommerce/catalog/edit-product.html" class="text-gray-900 text-hover-primary">Dell 32 UltraSharp</a>
-                             </td>
-                             <!--end::Item-->
-                             <!--begin::Product ID-->
-                             <td class="text-end">
-                                #XGY-356
-                             </td>
-                             <!--end::Product ID-->
-                             <!--begin::Date added-->
-                             <td class="text-end">
-                                22 Dec, 2024
-                             </td>
-                             <!--end::Date added-->
-                             <!--begin::Price-->
-                             <td class="text-end">
-                                $1,060
-                             </td>
-                             <!--end::Price-->
-                             <!--begin::Status-->
-                             <td class="text-end">
-                                <span class="badge py-3 px-4 fs-7 badge-light-warning">Low Stock</span>
-                             </td>
-                             <!--end::Status-->
-                             <!--begin::Qty-->
-                             <td class="text-end" data-order="8">
-                                <span class="text-gray-900 fw-bold">8 PCS</span>
-                             </td>
-                             <!--end::Qty-->
-                          </tr>
-                          <tr>
-                             <!--begin::Item-->
-                             <td>
-                                <a href="/../demo1/apps/ecommerce/catalog/edit-product.html" class="text-gray-900 text-hover-primary">Google Pixel 6 Pro</a>
-                             </td>
-                             <!--end::Item-->
-                             <!--begin::Product ID-->
-                             <td class="text-end">
-                                #XVR-425
-                             </td>
-                             <!--end::Product ID-->
-                             <!--begin::Date added-->
-                             <td class="text-end">
-                                27 Dec, 2024
-                             </td>
-                             <!--end::Date added-->
-                             <!--begin::Price-->
-                             <td class="text-end">
-                                $1,060
-                             </td>
-                             <!--end::Price-->
-                             <!--begin::Status-->
-                             <td class="text-end">
-                                <span class="badge py-3 px-4 fs-7 badge-light-primary">In Stock</span>
-                             </td>
-                             <!--end::Status-->
-                             <!--begin::Qty-->
-                             <td class="text-end" data-order="124">
-                                <span class="text-gray-900 fw-bold">124 PCS</span>
-                             </td>
-                             <!--end::Qty-->
-                          </tr>
+                        @foreach ($user->projects as $project)
+                            <tr>
+                                <!--begin::Product ID-->
+                                <td class="text-start">
+                                    {{$project->name}}
+                                </td>
+                                <!--end::Product ID-->
+                                <!--begin::Date added-->
+                                <td class="text-end">
+                                    {{\Carbon\Carbon::parse($project->created_at)->format('Y/m/d')}}
+                                </td>
+                                <!--end::Date added-->
+                                <!--begin::Price-->
+                                <td class="text-end">
+                                    $ {{$project->payout}}
+                                </td>
+                                <!--end::Price-->
+                                <!--begin::Status-->
+                                <td class="text-end">
+                                    @if ($project->is_completed)
+                                        <span class="badge py-3 px-4 fs-7 badge-light-success">Completed</span>
+                                    @elseif($project->due_at >= now())
+                                        <span class="badge py-3 px-4 fs-7 badge-light-danger">Overdue</span>
+                                    @else
+                                        <span class="badge py-3 px-4 fs-7 badge-light-primary">Pending</span>
+                                    @endif
+                                </td>
+                                <!--end::Status-->
+                                <!--begin::Qty-->
+                                <td class="text-end" data-order="58">
+                                    <a href="{{route('projects.show', $project)}}" class="btn btn-sm text-gray-900 fw-bold">view</a>
+                                </td>
+                                <!--end::Qty-->
+                            </tr>
+                        @endforeach
                        </tbody>
                        <!--end::Table body-->
                     </table>

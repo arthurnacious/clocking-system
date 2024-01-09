@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Auth\ProfileController;
+use App\Http\Controllers\Auth\UserProjectController;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,17 +22,22 @@ Route::middleware(['auth', 'verified'])->group(function() {
     Route::view('dashboard', 'dashboard')
         ->name('dashboard');
 
-Route::name('profile.')->group(function() {
+    Route::name('profile.')->group(function() {
 
-    Route::get('profile', [ProfileController::class, 'overview'])
-        ->name('overview');
+        Route::get('profile', [ProfileController::class, 'overview'])
+            ->name('overview');
 
-    Route::view('profile/settings', 'livewire.pages.profile.settings')
-        ->name('settings');
+        Route::view('profile/settings', 'livewire.pages.profile.settings')
+            ->name('settings');
 
-    // Route::get('/test', [TestController::class, 'index']);
+        // Route::get('/test', [TestController::class, 'index']);
 
-});
+    });
+
+    Route::get('{user}/projects', [UserProjectController::class])
+    ->name('user.projects');
+
+    Route::resource('projects', ProjectController::class);
 
 });
 
